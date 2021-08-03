@@ -42,4 +42,5 @@ CONFIGURATION
 -------------
  First Go to admin->config->development->Digitas Add Data and after go to 
  admin->config->development->Digitas View Data and see the custom user data
+ And also check REST API to Expose this data in JSON format on postman GET url "<host>/api/get-data"
 
