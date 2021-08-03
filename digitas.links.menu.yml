@@ -1,0 +1,11 @@
+digitas.view_data:  
+  title: 'Digitas View Data'  
+  route_name: digitas.display_data  
+  description: 'Display All Custom User Data Listing'  
+  parent: system.admin_config_development
+  
+digitas.add_data:  
+  title: 'Digitas Add Data'  
+  route_name: digitas.add_form  
+  description: 'Add Cusom Data'  
+  parent: system.admin_config_development  

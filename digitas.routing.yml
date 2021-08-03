@@ -1,0 +1,22 @@
+digitas.add_form:
+ path: '/digitas-test-form'
+ defaults:
+   _form: '\Drupal\digitas\Form\DigitasUserForm'
+ requirements:
+   _permission: 'access content'
+
+digitas.display_data:
+  path: '/admin/config/development/view-data'
+  defaults:
+    _controller: '\Drupal\digitas\Controller\DisplayDataController::display'
+    _title: 'All Data display'
+  requirements:
+    _permission: 'access content'   
+    
+digitas.get:
+  path: 'api/get-data'
+  defaults:
+   _controller: '\Drupal\digitas\Controller\RestApiController::get_data'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'    

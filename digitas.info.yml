@@ -1,0 +1,6 @@
+name: Digitas Test
+description: Create a one-step user details form
+package: Custom
+type: module
+version: 1.0 
+core: 8.x

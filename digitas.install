@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * Database Installation.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+
+function digitas_schema() {
+     $schema['digitas'] = [
+    'description' => 'Digitas Table.',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'fname' => [
+        'description' => 'First Name',
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'default' => '',
+      ],
+        'lname' => [
+        'description' => 'Last Name',
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'default' => '',
+      ],
+        'email' => [
+        'description' => 'Email address',
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'default' => '',
+      ],
+        'pincode' => [
+        'description' => 'Pincode',
+        'type' => 'int',
+        //'length' => '255',
+        'not null' => TRUE,
+        'default' => '0',
+      ],
+        'employee_role' => [
+        'description' => 'Employee Role',
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'default' => '',
+      ],
+],
+        'primary key' => ['id'],
+  ];
+  return $schema;
+}
+
+
