@@ -35,7 +35,7 @@ INSTALLATION
 
  * Install as you would normally install a contributed Drupal module.
    See: https://www.drupal.org/node/895232 for further information.
-   Download module and compress/extract then rename (digitas_task-master to digitas).
+   Download module and compress/extract then rename (digitas-master to digitas).
 
 
 CONFIGURATION
